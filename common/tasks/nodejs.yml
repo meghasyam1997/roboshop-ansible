@@ -4,9 +4,9 @@
 - name: Configuring NodeJS repos
   ansible.builtin.shell: curl -sL https://rpm.nodesource.com/setup_lts.x | bash
 
-- name: Install Nginx
+- name: Install NodeJs
   ansible.builtin.yum:
-    name: nginx
+    name: nodejs
     state: installed
 
 - name: Include task list in play
