@@ -1,4 +1,4 @@
-- name: Copy logstash config
+- name: Copy Logstash config
   ansible.builtin.templates:
     src: logstash.conf
     dest: /etc/logstash/conf.d/logstash.conf
