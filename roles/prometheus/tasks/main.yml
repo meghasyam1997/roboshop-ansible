@@ -1,4 +1,4 @@
-- name: Copy prometheus yml file
+- name: Copy prometheus configuration
   ansible.builtin.template:
     src: prometheus.yml
     dest: /opt/prometheus/prometheus.yml
