@@ -22,8 +22,6 @@ scrape_configs:
   - job_name: "prometheus"
     static_configs:
       - targets: ["localhost:9090"]
-  - job_name: "ec2_nodes"
+  - job_name: "ec2_node"
     static_configs:
       - targets: ["172.31.91.133:9100"]
-
-
