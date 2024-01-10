@@ -6,7 +6,7 @@ filebeat.inputs:
       - {{ log_file }}
 
 output.elasticsearch:
-  hosts: ["172.31.46.29:9200"]
+  hosts: ["172.31.46.29:5044"]
 
 filebeat.config.modules:
   path: ${path.config}/modules.d/*.yml
