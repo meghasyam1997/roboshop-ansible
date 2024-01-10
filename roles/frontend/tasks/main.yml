@@ -34,13 +34,3 @@
     name: nginx
     state: restarted
     enabled: true
-
-- name: Import Filebeat
-  ansible.builtin.import_role:
-    name: elk
-    tasks_from: filebeat
-
-- name: Import Prometheus Node Exporter
-  ansible.builtin.import_role:
-    name: prometheus
-    tasks_from: node_exporter
