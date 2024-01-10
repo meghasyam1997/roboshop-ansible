@@ -1,11 +1,11 @@
 filebeat.inputs:
-- type: filestream
-  id: { { component } }
-  enabled: true
-  paths:
-    - { { log_file } }
+  - type: filestream
+    id: { { component } }
+    enabled: true
+    paths:
+      - { { log_file } }
 
-output.elasticsearch:
+output.logstash:
   hosts: [ "172.31.46.29:5044" ]
 
 filebeat.config.modules:
